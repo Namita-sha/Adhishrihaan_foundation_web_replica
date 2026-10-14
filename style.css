@@ -28,6 +28,9 @@ body {
   background-color: #1f3a12;
   color: white;
 }
+.tight {
+  letter-spacing: -0.04em;
+}
 .navbar .nav-link {
   color: white;
   font-weight: 500;
@@ -39,15 +42,15 @@ body {
 }
 
 @media (max-width: 1399px) {
-.navbar-nav {
+  .navbar-nav {
     background-color: white;
     margin-top: 12px;
   }
-.navbar .nav-link {
+  .navbar .nav-link {
     color: #222;
     text-transform: none;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 2.1rem;
+    font-weight: 1000;
     padding: 14px 20px;
     border-bottom: 1px solid #2f4f1d;
   }
@@ -79,7 +82,7 @@ body {
   flex-direction: column;
   align-items: center;
   white-space: nowrap;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 35vw;
   line-height: 0.9;
   text-transform: uppercase;
@@ -123,4 +126,72 @@ body {
   height: 8px;
   border: 0;
   border-radius: 50%;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.card-small {
+  height: 250px;
+}
+.card-tall {
+  height: 516px;
+}
+.card-label {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+.grant-img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.nav-pills .nav-link {
+  color: #2f4f1d;
+  border: 1px solid #2f4f1d;
+  border-radius: 50px;
+  margin: 0 6px;
+  padding: 10px 28px;
+  font-size: 1rem;
+}
+.nav-pills .nav-link.active {
+  background-color: #2f4f1d;
+  color: white;
+}
+.event-img {
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+.event-slider .carousel-control-prev,
+.event-slider .carousel-control-next {
+  width: 60px;
+}
+.event-slider .card {
+  border: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+}
+.event-slider .card-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 540px;
+}
+.event-slider .card-body span.d-inline-block {
+  font-size: 1rem;
+  border-color: #eee !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.event-slider .badge {
+  font-size: 1.1rem !important;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+.event-dots {
+  position: static;
+  margin: 25px 0 0 0;
+}
+.event-dots [data-bs-target] {
+  background-color: #2f4f1d;
 }
