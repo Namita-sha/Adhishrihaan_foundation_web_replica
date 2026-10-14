@@ -1,9 +1,8 @@
 body {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   max-width: 1400px;
-  --bs-gutter-x: 2.5rem;
 }
 .bg-green {
   background-color: #2f4f1d;
@@ -25,7 +24,7 @@ body {
   color: white;
 }
 .btn-green:hover {
-  background-color: #1f3a12;
+  background-color: #26391c;
   color: white;
 }
 .tight {
@@ -50,7 +49,7 @@ body {
     color: #222;
     text-transform: none;
     font-size: 2.1rem;
-    font-weight: 1000;
+    font-weight: 900;
     padding: 14px 20px;
     border-bottom: 1px solid #2f4f1d;
   }
@@ -170,21 +169,21 @@ body {
 }
 .event-slider .card {
   border: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 .event-slider .card-body p {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 540px;
 }
-.event-slider .card-body span.d-inline-block {
+.event-chip {
   font-size: 1rem;
-  border-color: #eee !important;
-  border-radius: 4px !important;
+  border: 1px solid #eee;
+  border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .event-slider .badge {
-  font-size: 1.1rem !important;
+  font-size: 1.1rem;
   padding: 12px 14px;
   border-radius: 4px;
 }
@@ -194,4 +193,28 @@ body {
 }
 .event-dots [data-bs-target] {
   background-color: #2f4f1d;
+}
+
+.footer {
+  background: linear-gradient(135deg, #000000 20%, #2f4f1d 100%);
+  border-radius: 50px 50px 0 0;
+  padding: 80px 0 50px 0;
+}
+@media (max-width: 991px) {
+  .footer .container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 575px) {
+  .event-img {
+    height: 300px;
+  }
+  .event-slider .carousel-control-prev,
+  .event-slider .carousel-control-next {
+    bottom: auto;
+    height: 300px;
+  }
+  .card-tall {
+    height: 300px;
+  }
 }
