@@ -69,3 +69,58 @@ body {
     z-index: 3;
   }
 }
+
+.hero-img {
+  object-fit: cover;
+  height: 100vh;
+}
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+  font-family: 'Anton', sans-serif;
+  font-size: 35vw;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-title-green {
+  color: rgba(47, 79, 29, 0.75);
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 17vw;
+  }
+}
+.carousel-item .btn-outline-light {
+  border-width: 3px;
+  padding: 0.6rem 1.8rem;
+  font-weight: 500;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  opacity: 1;
+}
+.arrow-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #2f4f1d;
+  background-size: 40%;
+  border-radius: 50%;
+}
+@media (min-width: 992px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 100px;
+  }
+}
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 50%;
+}
